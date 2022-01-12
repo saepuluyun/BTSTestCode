@@ -1,4 +1,4 @@
-package com.example.testbts.model.entities
+package com.example.testbts.model
 
 import android.os.Parcelable
 

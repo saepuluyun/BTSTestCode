@@ -2,10 +2,10 @@ package com.example.testbts.services
 
 import com.example.testbts.model.LoginModel
 import com.example.testbts.model.RegisterModel
-import com.example.testbts.model.entities.GenericResponse
-import com.example.testbts.model.RegisterResponse
+import com.example.testbts.model.GenericResponse
+import com.example.testbts.model.entities.LoginResponse
+import com.example.testbts.model.entities.RegisterResponse
 import io.reactivex.Observable
-import kotlinx.android.parcel.RawValue
 import retrofit2.http.*
 
 public interface ApiService {
@@ -17,5 +17,5 @@ public interface ApiService {
     @POST("login")
     fun login(
         @Body body: LoginModel?
-    ): Observable<GenericResponse<RegisterResponse>?>?
+    ): Observable<GenericResponse<LoginResponse>?>?
 }

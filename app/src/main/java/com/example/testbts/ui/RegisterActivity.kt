@@ -3,13 +3,13 @@ package com.example.testbts.ui
 import android.os.Bundle
 import android.widget.Toast
 import com.example.testbts.databinding.ActivityRegisterBinding
-import com.example.testbts.model.RegisterResponse
-import com.example.testbts.model.entities.GenericResponse
-import com.example.testbts.services.IViewService
-import com.example.testbts.services.ServiceViewModel
+import com.example.testbts.model.entities.RegisterResponse
+import com.example.testbts.model.GenericResponse
+import com.example.testbts.services.register.IViewRegister
+import com.example.testbts.services.register.RegisterViewModel
 import kotlinx.android.synthetic.main.activity_login.*
 
-class RegisterActivity : BaseActivity(), IViewService {
+class RegisterActivity : BaseActivity(), IViewRegister {
 
     private lateinit var binding: ActivityRegisterBinding
 
@@ -27,7 +27,7 @@ class RegisterActivity : BaseActivity(), IViewService {
 
             // Call Api
             val iView = this
-            val presenter = ServiceViewModel(binding.root.context, iView)
+            val presenter = RegisterViewModel(binding.root.context, iView)
             presenter.register(username, email, password)
         }
     }
