@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="radius_10dp">10dp</dimen>
+    <dimen name="radius_15dp">15dp</dimen>
+    <dimen name="radius_25dp">25dp</dimen>
+    <dimen name="radius_30dp">30dp</dimen>
+    <dimen name="radius_40dp">40dp</dimen>
+    <dimen name="radius_45dp">45dp</dimen>
+    <dimen name="radius_100dp">100dp</dimen>
+    <dimen name="radius_120dp">120dp</dimen>
+</resources>

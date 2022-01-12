@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Typography_Error_Appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">15sp</item>
+        <item name="lineHeight">17sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="firstBaselineToTopHeight">13sp</item>
+        <item name="lastBaselineToBottomHeight">2sp</item>
+    </style>
+
+    <style name="Typography_Text_Input_Label" >
+        <item name="colorAccent">@color/red</item>
+        <item name="colorControlNormal">@color/light_grey</item>
+        <item name="colorControlActivated">@color/light_grey</item>
+    </style>
+
+    <style name="Typography_Button_Label_Medium">
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="lineHeight">15sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="firstBaselineToTopHeight">13sp</item>
+        <item name="lastBaselineToBottomHeight">2sp</item>
+    </style>
+
+
+</resources>

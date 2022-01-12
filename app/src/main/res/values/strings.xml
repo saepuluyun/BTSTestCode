@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TestBTS</string>
+
+    <string name="text_password">Password</string>
+    <string name="text_username">Username</string>
+    <string name="text_valid_username">Your valid username</string>
+    <string name="text_valid_email">Your valid Email</string>
+    <string name="text_fill_your_password">Fill your password</string>
+    <string name="text_register">Register Tap Here</string>
+    <string name="no_internet">"Tidak dapet terhubung ke server, mohon cek koneksi internet anda atau coba lagi nanti"</string>
+    <string name="error_timeoutConnection">Tidak dapat terhubung dengan server, mohon periksa koneksi internet anda</string>
+    <string name="error_network_problem_with_server">Tidak dapat terhubung dengan server, mohon periksa koneksi internet anda</string>
+</resources>
