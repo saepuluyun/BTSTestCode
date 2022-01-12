@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ceklist.CheckListActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note : Tahan lama untuk delete data"
+        android:textColor="@color/grey"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data Cecklist"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Typography_Text_Input_Label"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:errorTextAppearance="@style/Typography_Error_Appearance"
+        app:errorEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etChecklist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="Typography_Body_Normal_Text_form"
+            android:hint="Testing"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:paddingVertical="20dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/Typography_Button_Label_Medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_bg_radius_blue_100dp"
+        android:includeFontPadding="false"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="17dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/radius_25dp"
+        android:id="@+id/rvChecklist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

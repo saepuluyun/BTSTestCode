@@ -1,4 +1,4 @@
-package com.example.testbts.ui
+package com.example.testbts.ui.register
 
 import android.os.Bundle
 import android.widget.Toast
@@ -7,6 +7,7 @@ import com.example.testbts.model.entities.RegisterResponse
 import com.example.testbts.model.GenericResponse
 import com.example.testbts.services.register.IViewRegister
 import com.example.testbts.services.register.RegisterViewModel
+import com.example.testbts.ui.BaseActivity
 import kotlinx.android.synthetic.main.activity_login.*
 
 class RegisterActivity : BaseActivity(), IViewRegister {

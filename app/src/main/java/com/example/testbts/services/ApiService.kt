@@ -1,8 +1,7 @@
 package com.example.testbts.services
 
-import com.example.testbts.model.LoginModel
-import com.example.testbts.model.RegisterModel
-import com.example.testbts.model.GenericResponse
+import com.example.testbts.model.*
+import com.example.testbts.model.entities.CheckListResponse
 import com.example.testbts.model.entities.LoginResponse
 import com.example.testbts.model.entities.RegisterResponse
 import io.reactivex.Observable
@@ -18,4 +17,21 @@ public interface ApiService {
     fun login(
         @Body body: LoginModel?
     ): Observable<GenericResponse<LoginResponse>?>?
+
+    @POST("checklist")
+    fun addCheckList(
+        @Header("Authorization") token: String,
+        @Body body: CheckListModel?
+    ): Observable<GenericResponse<CheckListResponse>>?
+
+    @GET("checklist")
+    fun getCheckList(
+        @Header("Authorization") token: String,
+    ): Observable<CheckListResponseModel>?
+
+    @DELETE("checklist/{checklistId}")
+    fun deleteCheckList(
+        @Header("Authorization") token: String,
+        @Path("checklistId") id: Int
+    ): Observable<GenericResponse<CheckListResponse>>?
 }

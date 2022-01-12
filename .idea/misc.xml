@@ -6,8 +6,11 @@
         <entry key="..\:/Kantor/kotlin/TestBTS/app/src/main/res/drawable/custom_bg_radius_blue_100dp.xml" value="0.14635416666666667" />
         <entry key="..\:/Kantor/kotlin/TestBTS/app/src/main/res/drawable/ic_eye_dark_blue_18dp.xml" value="0.14635416666666667" />
         <entry key="..\:/Kantor/kotlin/TestBTS/app/src/main/res/drawable/selector_show_password.xml" value="0.14635416666666667" />
+        <entry key="..\:/Kantor/kotlin/TestBTS/app/src/main/res/layout/activity_ceklist.xml" value="0.30637254901960786" />
+        <entry key="..\:/Kantor/kotlin/TestBTS/app/src/main/res/layout/activity_check_list.xml" value="0.13333333333333333" />
         <entry key="..\:/Kantor/kotlin/TestBTS/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Kantor/kotlin/TestBTS/app/src/main/res/layout/activity_register.xml" value="0.13020833333333334" />
+        <entry key="..\:/Kantor/kotlin/TestBTS/app/src/main/res/layout/item_check_list.xml" value="0.13333333333333333" />
       </map>
     </option>
   </component>

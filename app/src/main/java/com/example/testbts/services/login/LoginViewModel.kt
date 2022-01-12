@@ -27,11 +27,11 @@ public class LoginViewModel {
 
     fun login(username: String, password: String) {
         val disposable = CompositeDisposable()
-        var register = LoginModel(username, password)
+        var login = LoginModel(username, password)
         // call end point api
         apiService = getClient(context!!)!!.create(ApiService::class.java)
         disposable.add(
-            apiService.login(register)
+            apiService.login(login)
                 !!.subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .sorted()
